@@ -6,6 +6,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons'
 import * as Font from 'expo-font';
 import { useState, useEffect } from "react";
 import Camisa from '../../assets/images/camisa_amarela.jpg'
+import { ItemCard } from "../../components/ItemCard";
 
 export default function Homepage() {
 
@@ -45,9 +46,9 @@ export default function Homepage() {
                     <CategoryCard icon={<MaterialCommunityIcons name="tshirt-crew-outline" size={35} color="black" />} text="calçados"/>
                     <CategoryCard icon={<MaterialCommunityIcons name="tshirt-crew-outline" size={35} color="black" />} text="bolsas"/>
                 </View>
-               
-            </View>
 
+                <ItemCard/>
+            </View>
         </View>
     )
 }

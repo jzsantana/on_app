@@ -25,3 +25,11 @@ export interface CustomInputProps extends CustomInputBaseProps {
     typeInput?: boolean;
 }
   
+export interface CustomItemCard extends PressableProps {
+    productName: string;
+    image?: String;
+    price: number;
+    idProduct: string;
+    storeName: string;
+}
+
